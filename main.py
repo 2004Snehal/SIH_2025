@@ -177,8 +177,8 @@ def analyze(
     min_lat: float = Query(...),
     max_lon: float = Query(...),
     max_lat: float = Query(...),
-    start_date: str = Query("2025-07-01"),
-    end_date: str = Query("2025-07-15")
+    start_date: str = Query("2024-07-01"),
+    end_date: str = Query("2024-07-15")
 ):
     coords = [min_lon, min_lat, max_lon, max_lat]
     time_range = (start_date, end_date)
